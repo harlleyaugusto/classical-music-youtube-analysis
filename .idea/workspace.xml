@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="" />
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deliverableD4.2-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deliverableD4.2-2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +40,19 @@
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
+        <option value="$PROJECT_DIR$" />
         <option value="$PROJECT_DIR$/.idea" />
       </set>
     </option>
   </component>
   <component name="ProjectId" id="1Rb4X4dHot80h1UCQTFSGH93FOs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -169,6 +177,7 @@
       <workItem from="1570101473232" duration="14411000" />
       <workItem from="1570178607763" duration="35894000" />
       <workItem from="1570558246322" duration="559000" />
+      <workItem from="1570558813017" duration="747000" />
     </task>
     <servers />
   </component>
