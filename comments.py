@@ -93,15 +93,15 @@ def format_readeable(lst):
         return ', '. join([i[0] for i in lst])
 
 if __name__ == '__main__':
-    data = pd.read_csv("../data/comments.csv")
+    data = pd.read_csv("data/comments.csv")
     authors = data.groupby('author').count()
 
     u = list(authors.index)
     c = list(authors.iloc[:, 0])
 
-    st = StanfordNERTagger(
-        '/home/harlley/Projects/deliverableD4.2-2/venv/lib/stanford-ner-2018-10-16/classifiers/english.all.3class.distsim.crf.ser.gz',
-        '/home/harlley/Projects/deliverableD4.2-2/venv/lib/stanford-ner-2018-10-16/stanford-ner.jar', encoding='utf-8')
+    #st = StanfordNERTagger(
+    #    '/home/harlley/Projects/deliverableD4.2-2/venv/lib/stanford-ner-2018-10-16/classifiers/english.all.3class.distsim.crf.ser.gz',
+    #    '/home/harlley/Projects/deliverableD4.2-2/venv/lib/stanford-ner-2018-10-16/stanford-ner.jar', encoding='utf-8')
 
     lst = data.iloc[:, 1].apply(nltk_main)
 

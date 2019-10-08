@@ -1,10 +1,10 @@
 import pandas as pd
 
 if __name__ == '__main__':
-    data = pd.read_csv("../data/videos.csv")
+    data = pd.read_csv("data/videos.csv")
     uploaders = data.groupby('video_uploader_id').count()
     s_sum =  data.groupby('video_uploader_id').sum()
-
+    #
     u = list(uploaders.index)
     up = list(uploaders.iloc[:,0])
     l = list(s_sum.iloc[:,1])
@@ -14,16 +14,4 @@ if __name__ == '__main__':
     df = {'user_id': u, 'user_count': up, 'user_likes': l, 'user_dislike': d, 'user_comments': c}
 
     df = pd.DataFrame(df)
-    df.to_csv("../data/s_videos.csv", index = False)
-
-    #data[data.video_uploader_id=='000manos'].iloc[:,0:5]
-
-    #print(uploaders.count().sort_values(by = 'video_url')['video_url'].__len__())
-
-    #print("Unique:" + str(data.video_uploader_id.unique().__len__()))
-
-    #for id in data.video_uploader_id.unique():
-     #   if uploaders.get_group(id).__len__() == 0:
-      #      print("NOT FOUND: " + id)
-       # else:
-        #    print("FOUND: " + id)
+    df.to_csv("data/s_videos.csv", index = False)
