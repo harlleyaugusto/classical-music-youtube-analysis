@@ -115,9 +115,9 @@ if __name__ == '__main__':
 
     df = {'user_id': u, 'user_commments': c}
     df = pd.DataFrame(df)
-    df.to_csv("../data/u_comments.csv", index=False)
+    df.to_csv("data/u_comments.csv", index=False)
 
     df = {'user_id': list(data.author), 'comment': list(data.text), 'entity': list(lst), 'flesch_reading_ease':list(readability)}
     df = pd.DataFrame(df)
 
-    df.to_csv("../data/s_comments.csv", index=False)
+    df.to_csv("data/s_comments.csv", index=False)
