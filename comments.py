@@ -121,3 +121,7 @@ if __name__ == '__main__':
     df = pd.DataFrame(df)
 
     df.to_csv("data/s_comments.csv", index=False)
+
+
+
+
