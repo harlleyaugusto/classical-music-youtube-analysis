@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="" />
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="Off to Portugal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/gensim_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +81,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gensim_similarity">
-    <configuration name="comments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.videos">
+    <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,9 +152,6 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -175,7 +176,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.text_similarity" />
-        <item itemvalue="Python.comments" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +206,9 @@
       <workItem from="1570697714456" duration="10084000" />
       <workItem from="1570708502483" duration="24854000" />
       <workItem from="1570782745511" duration="15511000" />
+      <workItem from="1570960585837" duration="60000" />
+      <workItem from="1570976439109" duration="7528000" />
+      <workItem from="1571006777194" duration="2895000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570960147716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Off to Portugal">
+      <created>1570960613632</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570960613632</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,11 +299,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1570806803745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1570984599529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1570716740547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570561730696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1570569696517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1570983325862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

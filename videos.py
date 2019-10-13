@@ -8,6 +8,8 @@ from itertools import repeat
 from statistics import mean
 from nltk.tokenize import word_tokenize
 
+import gensim_similarity
+
 
 def completeness(video):
     if video is not None:
@@ -44,24 +46,31 @@ if __name__ == '__main__':
     data = data[data.relevant]
 
     # Description cleanning
-    descriptions = data['video_description'].apply(remove_ponctuation)
+    data['video_description'] = data['video_description'].apply(remove_ponctuation)
 
     #description classifier
-    data['description_level'] = descriptions.apply(length_description).apply(description_classifier)
+    data['description_level'] = data['video_description'].apply(length_description).apply(description_classifier)
 
     # Selecting only description with more than 2 words
     data = data[data.description_level]
 
-    descriptions = data['video_description'].apply(remove_ponctuation)
+    #descriptions = data['video_description'].apply(remove_ponctuation)
+
+    #gloveFile = "data/glove.6B.50d.txt"
+    #model = gensim_similarity.loadGloveModel(gloveFile)
+
+    #sim = list(map(gensim_similarity.cosine_distance_wordembedding_method, data['video_tags'].apply(gensim_similarity.replace), data['video_description']))
+
+    #data['sim'] = sim
 
     #Completeness calculation
     comp = [completeness(row) for index, row in data.iterrows()]
 
     #Readability
-    readability_fre = descriptions.apply(lambda text: textstat.flesch_reading_ease(text) if (text is not None) else text)
+    readability_fre = data['video_description'].apply(lambda text: textstat.flesch_reading_ease(text) if (text is not None) else text)
 
     #Description length
-    l_d = descriptions.apply(length_description)
+    l_d = data['video_description'].apply(length_description)
 
     data['completeness'] = list(comp)
     data['flesch_reading_ease'] = list(readability_fre)
@@ -100,4 +109,5 @@ if __name__ == '__main__':
 
     #step1 = data.loc[0:2, 'video_tags'].apply(eval)
     #step1.apply(lambda lt: list(map(textdistance.cosine, lt, cycle(['blah']))))
+
 

@@ -1,7 +1,6 @@
-import logging
-from gensim import models
+import videos
 
-gloveFile = "data/glove.6B.50d.txt"
+model = {}
 
 import numpy as np
 
@@ -52,10 +51,28 @@ def calculate_heat_matrix_for_two_sentences(s1,s2):
 
 def cosine_distance_wordembedding_method(s1, s2):
     import scipy
-    vector_1 = np.mean([model[word] if (word in model) else 0 for word in preprocess(s1)],axis=0)
-    vector_2 = np.mean([model[word] if (word in model) else 0  for word in preprocess(s2)],axis=0)
+    vector_1 = [model[word] if (word in model) else 0 for word in preprocess(s1)]
+    vector_2 = [model[word] if (word in model) else 0 for word in preprocess(s2)]
+
+    vector_1 = np.mean(vector_1, axis = 0) if (vector_1.__len__() > 0) else (0)
+    vector_2 = np.mean(vector_2, axis = 0) if (vector_2.__len__() > 0) else (0)
+
+
+    #vector_1 = np.mean([model[word] if (word in model) else 0 for word in preprocess(s1)],axis=0)
+    #vector_2 = np.mean([model[word] if (word in model) else 0  for word in preprocess(s2)],axis=0)
+
+
     cosine = scipy.spatial.distance.cosine(vector_1, vector_2)
-    print('Word Embedding method with a cosine distance asses that our two sentences are similar to',round((1-cosine)*100,2),'%')
+    sim = round((1-cosine)*100,2);
+    #print(sim)
+
+
+    #if sim < 0:
+    #    print('Cosine: ' + str(sim))
+    #    print(str(s1) + '\n')
+    #    print(str(s2) + '\n')
+
+    return cosine
 
 def heat_map_matrix_between_two_sentences(s1,s2):
     df = calculate_heat_matrix_for_two_sentences(s1,s2)
@@ -67,11 +84,31 @@ def heat_map_matrix_between_two_sentences(s1,s2):
     print(cosine_distance_wordembedding_method(s1, s2))
     return ax_blue
 
-ss1 = 'Today is a day, dont you think ssss fagsfssdafs?'
-ss2 = 'Obama speaks to the media in Illinois'
-
-model = loadGloveModel(gloveFile)
-cosine_distance_wordembedding_method(ss1,ss2)
+def replace(text):
+    if text is not None:
+        return text.replace('[', '').replace(']', '').replace('\"', '').replace(',', ' ')
+    else:
+        return ''
 
 if __name__ == '__main__':
-    teste = {}
+
+    data = pd.read_csv("data/videos.csv")
+    data = data[data.relevant]
+
+    # Description cleanning
+    data['video_description'] = data['video_description'].apply(videos.remove_ponctuation)
+
+    # description classifier
+    data['description_level'] = data['video_description'].apply(videos.length_description).apply(videos.description_classifier)
+
+    # Selecting only description with more than 2 words
+    data = data[data.description_level]
+
+    print("Data lenght: " + str(data.__len__()))
+
+    # descriptions = data['video_description'].apply(remove_ponctuation)
+
+    gloveFile = "data/glove.6B.50d.txt"
+    model = loadGloveModel(gloveFile)
+
+    list(map(cosine_distance_wordembedding_method, data['video_tags'].apply(replace), data['video_description']))
