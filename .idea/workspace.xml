@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gensim_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
-    </list>
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +104,9 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -127,6 +126,9 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -146,6 +148,9 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -200,7 +205,7 @@
       <workItem from="1570606250113" duration="24718000" />
       <workItem from="1570697714456" duration="10084000" />
       <workItem from="1570708502483" duration="24854000" />
-      <workItem from="1570782745511" duration="15479000" />
+      <workItem from="1570782745511" duration="15511000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -244,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570783539620</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Off to Portugal">
+      <created>1570960147716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570960147716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +284,8 @@
     <MESSAGE value="Updating..." />
     <MESSAGE value="Completeness and start creating user profile" />
     <MESSAGE value="User profile v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="User profile v1" />
+    <MESSAGE value="Off to Portugal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Off to Portugal" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
