@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/videos_cleaning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gensim_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/gensim_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_similarity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos_cleaning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.videos">
+  <component name="RunManager" selected="Python.text_similarity">
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,35 +105,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gensim_similarity" type="PythonConfigurationType" factoryName="Python">
-      <module name="deliverableD4.2-2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gensim_similarity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="text_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -189,15 +164,14 @@
     </configuration>
     <list>
       <item itemvalue="Python.videos" />
-      <item itemvalue="Python.gensim_similarity" />
       <item itemvalue="Python.comments" />
       <item itemvalue="Python.text_similarity" />
       <item itemvalue="Python.videos_cleaning" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.videos_cleaning" />
         <item itemvalue="Python.text_similarity" />
+        <item itemvalue="Python.videos_cleaning" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +205,7 @@
       <workItem from="1570960585837" duration="60000" />
       <workItem from="1570976439109" duration="7528000" />
       <workItem from="1571006777194" duration="2940000" />
-      <workItem from="1571046126135" duration="9405000" />
+      <workItem from="1571046126135" duration="19444000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -296,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571009890508</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="videos_cleaning.py added">
+      <created>1571060675308</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571060675308</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,12 +307,13 @@
     <MESSAGE value="User profile v1" />
     <MESSAGE value="Off to Portugal" />
     <MESSAGE value="At Portugal" />
-    <option name="LAST_COMMIT_MESSAGE" value="At Portugal" />
+    <MESSAGE value="videos_cleaning.py added" />
+    <option name="LAST_COMMIT_MESSAGE" value="videos_cleaning.py added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1571046388416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1570716740547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1571064993839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570561730696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

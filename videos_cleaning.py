@@ -50,6 +50,6 @@ if __name__ == '__main__':
 
     logging.info('Only description in english selected!')
 
-    data.to_csv("data/videos_processed.csv")
+    data.to_csv("data/videos_processed.csv", index=False)
 
     logging.info('Videos preprocessed!')

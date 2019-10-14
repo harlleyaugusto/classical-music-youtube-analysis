@@ -6,11 +6,14 @@ import itertools
 from itertools import cycle
 from itertools import repeat
 from statistics import mean
+import logging
+import text_similarity
+import math
 
 from nltk.tokenize import word_tokenize
 from langdetect import detect
 
-import gensim_similarity
+import text_similarity
 
 
 def completeness(video):
@@ -41,14 +44,25 @@ def description_classifier(len):
 
 
 if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
+
     data = pd.read_csv("data/videos_processed.csv")
 
-    #gloveFile = "data/glove.6B.50d.txt"
-    #model = gensim_similarity.loadGloveModel(gloveFile)
+    logging.info('Data loaded!')
 
-    #sim = list(map(gensim_similarity.cosine_distance_wordembedding_method, data['video_tags'].apply(gensim_similarity.replace), data['video_description']))
+    gloveFile = "data/glove.6B.50d.txt"
+    model = text_similarity.loadGloveModel(gloveFile)
 
-    #data['sim'] = sim
+    logging.info('glove model built!')
+
+    logging.info('Calculating similarity between...')
+
+    sim = []
+    for index, row in data.iterrows():
+        sim.append(text_similarity.cosine_distance_wordembedding_method(model, text_similarity.replace(row.video_tags), row.video_description))
+    logging.info('Done!')
+
+    data['sim'] = [0 if math.isnan(x) else x for x in sim]
 
     #Completeness calculation
     comp = [completeness(row) for index, row in data.iterrows()]
@@ -85,16 +99,7 @@ if __name__ == '__main__':
 
     user_profile = pd.merge(uploaders_count, uploaders_avg, left_index=True, right_index=True)
 
-    user_profile.to_csv("data/user_profile.csv")
+    user_profile.to_csv("data/user_profile.csv", index=False)
 
-    #data[a.apply(lambda text: 'Music' not in text if (text is not None and isinstance(text, str)) else False)]
-    #max(list(map(textdistance.cosine, data.video_tags.apply(eval), cycle(data.composer_name))))
-    #data.video_tags.apply(eval).apply(lambda list_tags: list(map(textdistance.cosine, cycle(data.composer_name))))
-    #data.loc[0:2, 'video_tags'].apply(eval).apply(lambda list_tag: list(map(textdistance.cosine, list_tag, data.loc[0:2, 'composer_name'].apply(cycle))))
-
-    #step1.apply(lambda list_tag: list(map(textdistance.cosine, list_tag, data.loc[0:2, 'composer_name'].apply(lambda name: repeat(name, list_tag.__len__())))))
-
-    #step1 = data.loc[0:2, 'video_tags'].apply(eval)
-    #step1.apply(lambda lt: list(map(textdistance.cosine, lt, cycle(['blah']))))
 
 
