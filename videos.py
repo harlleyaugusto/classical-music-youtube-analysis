@@ -95,11 +95,11 @@ if __name__ == '__main__':
 
     uploaders_count = uploaders_count.rename(columns={"video_url": "video_count"})
 
-    uploaders_avg = uploaders_group[['completeness','flesch_reading_ease', 'description_length', 'mean_consine']].mean()
+    uploaders_avg = uploaders_group[['completeness','flesch_reading_ease', 'description_length', 'mean_consine', 'sim']].mean()
 
     user_profile = pd.merge(uploaders_count, uploaders_avg, left_index=True, right_index=True)
 
-    user_profile.to_csv("data/user_profile.csv", index=False)
+    user_profile.to_csv("data/user_profile.csv")
 
 
 
