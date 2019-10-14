@@ -6,7 +6,9 @@ import itertools
 from itertools import cycle
 from itertools import repeat
 from statistics import mean
+
 from nltk.tokenize import word_tokenize
+from langdetect import detect
 
 import gensim_similarity
 
@@ -22,11 +24,7 @@ def completeness(video):
     else:
          return 0
 
-def remove_ponctuation(text):
-    if text is not None and isinstance(text, str):
-        return text.translate(str.maketrans('', '', string.punctuation)).lower()
-    else:
-        None
+
 
 def length_description(text):
     if text is not None and isinstance(text, str):
@@ -41,20 +39,9 @@ def description_classifier(len):
         return True
 
 
+
 if __name__ == '__main__':
-    data = pd.read_csv("data/videos.csv")
-    data = data[data.relevant]
-
-    # Description cleanning
-    data['video_description'] = data['video_description'].apply(remove_ponctuation)
-
-    #description classifier
-    data['description_level'] = data['video_description'].apply(length_description).apply(description_classifier)
-
-    # Selecting only description with more than 2 words
-    data = data[data.description_level]
-
-    #descriptions = data['video_description'].apply(remove_ponctuation)
+    data = pd.read_csv("data/videos_processed.csv")
 
     #gloveFile = "data/glove.6B.50d.txt"
     #model = gensim_similarity.loadGloveModel(gloveFile)

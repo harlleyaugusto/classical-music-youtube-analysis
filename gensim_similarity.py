@@ -3,6 +3,11 @@ import videos
 model = {}
 
 import numpy as np
+import scipy
+
+import re
+from nltk.corpus import stopwords
+import pandas as pd
 
 def loadGloveModel(gloveFile):
     print ("Loading Glove Model")
@@ -17,10 +22,6 @@ def loadGloveModel(gloveFile):
     print ("Done.",len(model)," words loaded!")
     return model
 
-
-import re
-from nltk.corpus import stopwords
-import pandas as pd
 
 def preprocess(raw_text):
 
@@ -50,7 +51,7 @@ def calculate_heat_matrix_for_two_sentences(s1,s2):
     return result_df
 
 def cosine_distance_wordembedding_method(s1, s2):
-    import scipy
+
     vector_1 = [model[word] if (word in model) else 0 for word in preprocess(s1)]
     vector_2 = [model[word] if (word in model) else 0 for word in preprocess(s2)]
 
@@ -74,15 +75,6 @@ def cosine_distance_wordembedding_method(s1, s2):
 
     return cosine
 
-def heat_map_matrix_between_two_sentences(s1,s2):
-    df = calculate_heat_matrix_for_two_sentences(s1,s2)
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(figsize=(5,5))
-    ax_blue = sns.heatmap(df, cmap="YlGnBu")
-    # ax_red = sns.heatmap(df)
-    print(cosine_distance_wordembedding_method(s1, s2))
-    return ax_blue
 
 def replace(text):
     if text is not None:
