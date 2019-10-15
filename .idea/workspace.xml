@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fasttext_similarity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comments_cleaning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.videos">
+  <component name="RunManager" selected="Python.comments_cleaning">
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,6 +99,25 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="comments_cleaning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments_cleaning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -153,9 +172,6 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -176,11 +192,13 @@
       <item itemvalue="Python.comments" />
       <item itemvalue="Python.glove_similarity" />
       <item itemvalue="Python.videos_cleaning" />
+      <item itemvalue="Python.comments_cleaning" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.glove_similarity" />
+        <item itemvalue="Python.comments_cleaning" />
         <item itemvalue="Python.videos_cleaning" />
+        <item itemvalue="Python.glove_similarity" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +234,7 @@
       <workItem from="1571006777194" duration="2940000" />
       <workItem from="1571046126135" duration="25159000" />
       <workItem from="1571133022282" duration="509000" />
-      <workItem from="1571133546268" duration="1251000" />
+      <workItem from="1571133546268" duration="4824000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -302,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571075260588</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updating...">
+      <created>1571134905530</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571134905530</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +366,7 @@
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570561730696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments_cleaning.coverage" NAME="comments_cleaning Coverage Results" MODIFIED="1571135061636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571133062825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

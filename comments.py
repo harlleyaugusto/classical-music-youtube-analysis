@@ -92,6 +92,18 @@ def format_readeable(lst):
     if (lst is not None):
         return ', '. join([i[0] for i in lst])
 
+def length_description(text):
+    if text is not None and isinstance(text, str):
+        return word_tokenize(text).__len__()
+    else:
+        return 0
+
+def description_classifier(len):
+    if(len == 0 or len == 1):
+        return False
+    else:
+        return True
+
 if __name__ == '__main__':
     data = pd.read_csv("data/comments.csv")
     authors = data.groupby('author').count()
