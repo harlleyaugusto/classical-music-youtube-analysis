@@ -1,19 +1,12 @@
 import pandas as pd
 import textstat
-import string
 import textdistance
-import itertools
-from itertools import cycle
 from itertools import repeat
 from statistics import mean
 import logging
-import text_similarity
 import math
-
 from nltk.tokenize import word_tokenize
-from langdetect import detect
-
-import text_similarity
+import glove_similarity
 
 
 def completeness(video):
@@ -26,7 +19,6 @@ def completeness(video):
         return total / video.keys().__len__()
     else:
          return 0
-
 
 
 def length_description(text):
@@ -42,7 +34,6 @@ def description_classifier(len):
         return True
 
 
-
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
 
@@ -51,7 +42,7 @@ if __name__ == '__main__':
     logging.info('Data loaded!')
 
     gloveFile = "data/glove.6B.50d.txt"
-    model = text_similarity.loadGloveModel(gloveFile)
+    model = glove_similarity.loadGloveModel(gloveFile)
 
     logging.info('glove model built!')
 
@@ -59,10 +50,10 @@ if __name__ == '__main__':
 
     sim = []
     for index, row in data.iterrows():
-        sim.append(text_similarity.cosine_distance_wordembedding_method(model, text_similarity.replace(row.video_tags), row.video_description))
+        sim.append(glove_similarity.cosine_distance_wordembedding_method(model, glove_similarity.replace(row.video_tags), row.video_description))
     logging.info('Done!')
 
-    data['sim'] = [0 if math.isnan(x) else x for x in sim]
+    data['sim'] = [0 if math.isnan(x) or x < 0 else x for x in sim]
 
     #Completeness calculation
     comp = [completeness(row) for index, row in data.iterrows()]
