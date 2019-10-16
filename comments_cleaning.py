@@ -37,13 +37,6 @@ if __name__ == '__main__':
     data = data[data.text_level]
     logging.info('Text with more tha 2 words selected!')
 
-    logging.info('Spam filtering...')
-    data['spam'] = spam_detection.classifier(data['text'])
-
-    data = data[data['spam'] == 0]
-
-    logging.info('Done!')
-
     # Select only description in English
 
     logging.info('Classifying text language...')
@@ -53,6 +46,13 @@ if __name__ == '__main__':
     data = data[data['language'] == 'en']
 
     logging.info('Only text in english selected!')
+
+    logging.info('Spam filtering...')
+    data['spam'] = spam_detection.classifier(data['text'])
+
+    data = data[data['spam'] == 0]
+
+    logging.info('Done!')
 
     data.to_csv("data/comments_processed.csv", index=False)
     data = pd.read_csv("data/comments_processed.csv", engine='python')
