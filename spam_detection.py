@@ -14,7 +14,10 @@ def load_data():
     for file in data_files:
         data = pd.read_csv(file)
         train_data.append(data)
+
+    #train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv'))
     train_data = pd.concat(train_data)
+
     return train_data
 
 ## Function which drops the given features from the given dataframe
@@ -89,3 +92,6 @@ if __name__ == '__main__':
     predictions = model.predict(comment_tfidf)
 
     classifier(data['text'])
+
+
+    #http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/

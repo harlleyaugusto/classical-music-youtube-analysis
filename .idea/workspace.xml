@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SMS_spam_collection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments_cleaning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spam_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/spam_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +82,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.comments_cleaning">
+  <component name="RunManager" selected="Python.spam_detection">
+    <configuration name="SMS_spam_collection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SMS_spam_collection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,28 +143,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="glove_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="deliverableD4.2-2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/glove_similarity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="lsa_implementation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,9 +169,6 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -234,19 +228,19 @@
     <list>
       <item itemvalue="Python.videos" />
       <item itemvalue="Python.comments" />
-      <item itemvalue="Python.glove_similarity" />
       <item itemvalue="Python.videos_cleaning" />
       <item itemvalue="Python.comments_cleaning" />
       <item itemvalue="Python.lsa_implementation" />
       <item itemvalue="Python.spam_detection" />
+      <item itemvalue="Python.SMS_spam_collection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spam_detection" />
+        <item itemvalue="Python.SMS_spam_collection" />
         <item itemvalue="Python.comments_cleaning" />
         <item itemvalue="Python.videos_cleaning" />
-        <item itemvalue="Python.spam_detection" />
         <item itemvalue="Python.lsa_implementation" />
-        <item itemvalue="Python.glove_similarity" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +277,7 @@
       <workItem from="1571046126135" duration="25159000" />
       <workItem from="1571133022282" duration="509000" />
       <workItem from="1571133546268" duration="23160000" />
-      <workItem from="1571235808930" duration="2695000" />
+      <workItem from="1571235808930" duration="6849000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -390,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571224110396</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- spam_detection with comments_cleaning&#10;- engine = python">
+      <created>1571238550274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1571238550274</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +425,8 @@
     <MESSAGE value="Updating..." />
     <MESSAGE value="comments_cleaning.py added" />
     <MESSAGE value="spam_detection added" />
-    <option name="LAST_COMMIT_MESSAGE" value="spam_detection added" />
+    <MESSAGE value="- spam_detection with comments_cleaning&#10;- engine = python" />
+    <option name="LAST_COMMIT_MESSAGE" value="- spam_detection with comments_cleaning&#10;- engine = python" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
@@ -436,6 +438,7 @@
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$lsa_implementation.coverage" NAME="lsa_implementation Coverage Results" MODIFIED="1571145764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$spam_detection.coverage" NAME="spam_detection Coverage Results" MODIFIED="1571219476344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1571240016756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571236840408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
