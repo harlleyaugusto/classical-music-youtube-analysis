@@ -6,6 +6,7 @@ import logging
 
 from langdetect import detect
 
+import spam_detection
 from comments import length_description, description_classifier
 
 
@@ -23,8 +24,7 @@ def remove_ponctuation(text):
 
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
-    data = pd.read_csv("data/comments.csv")
-    v_data = pd.read_csv("data/videos.csv")
+    data = pd.read_csv("data/comments.csv", engine = 'python')
 
     # Description cleanning
     data['text'] = data['text'].apply(remove_ponctuation)
@@ -37,6 +37,13 @@ if __name__ == '__main__':
     data = data[data.text_level]
     logging.info('Text with more tha 2 words selected!')
 
+    logging.info('Spam filtering...')
+    data['spam'] = spam_detection.classifier(data['text'])
+
+    data = data[data['spam'] == 0]
+
+    logging.info('Done!')
+
     # Select only description in English
 
     logging.info('Classifying text language...')
@@ -48,5 +55,6 @@ if __name__ == '__main__':
     logging.info('Only text in english selected!')
 
     data.to_csv("data/comments_processed.csv", index=False)
+    data = pd.read_csv("data/comments_processed.csv", engine='python')
 
     logging.info('Comments preprocessed!')

@@ -1,9 +1,4 @@
-## import statements ##
-import numpy as np
 import pandas as pd
-import seaborn as sns
-#import matplotlib.pyplot as plt
-import missingno as ms
 import re
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
@@ -28,6 +23,31 @@ def drop_fectures(features,data):
 
 def process_content(content):
     return " ".join(re.findall("[A-Za-z]+",content.lower()))
+
+def classifier(data):
+    train_data = load_data()
+    drop_fectures(['COMMENT_ID', 'AUTHOR', 'DATE'], train_data)
+    train_data['processed_content'] = train_data['CONTENT'].apply(process_content)
+    drop_fectures(['CONTENT'], train_data)
+
+    x_train, x_test, y_train, y_test = train_test_split(train_data['processed_content'], train_data['CLASS'],
+                                                        test_size=0.2, random_state=57)
+
+    count_vect = CountVectorizer(stop_words='english')
+    x_train_counts = count_vect.fit_transform(x_train)
+
+    tranformer = TfidfTransformer()
+    x_train_tfidf = tranformer.fit_transform(x_train_counts)
+
+    model = RandomForestClassifier()
+    model.fit(x_train_tfidf, y_train)
+
+    comment_counts = count_vect.transform(data)
+    comment_tfidf = tranformer.transform(comment_counts)
+
+    predictions = model.predict(comment_tfidf)
+
+    return list(predictions)
 
 if __name__ == '__main__':
     train_data = load_data()
@@ -63,7 +83,9 @@ if __name__ == '__main__':
 
     data = pd.read_csv("data/comments_processed.csv")
 
-    comment_counts = count_vect.fit_transform(data['text'])
-    comment_tfidf = tranformer.fit_transform(comment_counts)
+    comment_counts = count_vect.transform(data['text'])
+    comment_tfidf = tranformer.transform(comment_counts)
 
     predictions = model.predict(comment_tfidf)
+
+    classifier(data['text'])
