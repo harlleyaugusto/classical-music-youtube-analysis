@@ -26,6 +26,9 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     data = pd.read_csv("data/comments.csv", engine = 'python')
 
+    # Drop duplicates
+    data.drop_duplicates(subset='cid', inplace=True, keep='last')
+
     # Description cleanning
     data['text'] = data['text'].apply(remove_ponctuation)
     logging.info('Punctuation removed!')
@@ -33,7 +36,7 @@ if __name__ == '__main__':
     # description classifier
     data['text_level'] = data['text'].apply(length_description).apply(description_classifier)
 
-    # Selecting only description with more than 2 words
+    # Selecting only comments with more than 2 words
     data = data[data.text_level]
     logging.info('Text with more tha 2 words selected!')
 

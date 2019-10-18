@@ -53,7 +53,7 @@ if __name__ == '__main__':
         sim.append(glove_similarity.cosine_distance_wordembedding_method(model, glove_similarity.replace(row.video_tags), row.video_description))
     logging.info('Done!')
 
-    data['sim'] = [0 if math.isnan(x) or x < 0 else x for x in sim]
+    data['sim_tag_description'] = [0 if math.isnan(x) or x < 0 else x for x in sim]
 
     #Completeness calculation
     comp = [completeness(row) for index, row in data.iterrows()]
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     #Mean of the three greater similarities beteween composer and all tags
     mean_cosine = [mean(sorted(i, reverse=True)[0:3]) if (i.__len__() > 0) else 0 for i in consine_lst]
 
-    data['mean_consine'] = mean_cosine
+    data['sim_tag_composer'] = mean_cosine
 
     uploaders_group = data[data.description_level].groupby(['video_uploader_id', 'composer_name'])
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     uploaders_count = uploaders_count.rename(columns={"video_url": "video_count"})
 
-    uploaders_avg = uploaders_group[['completeness','flesch_reading_ease', 'description_length', 'mean_consine', 'sim']].mean()
+    uploaders_avg = uploaders_group[['completeness','flesch_reading_ease', 'description_length', 'sim_tag_composer', 'sim_tag_description']].mean()
 
     user_profile = pd.merge(uploaders_count, uploaders_avg, left_index=True, right_index=True)
 

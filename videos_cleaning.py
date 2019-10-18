@@ -25,6 +25,10 @@ def remove_ponctuation(text):
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     data = pd.read_csv("data/videos.csv")
+
+    #Drop duplicates
+    data.drop_duplicates(subset='video_id', inplace=True, keep = 'last')
+
     data = data[data.relevant]
     logging.info('Relevant videos selected!')
 
