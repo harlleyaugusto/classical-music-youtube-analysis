@@ -99,7 +99,7 @@ def length_description(text):
         return 0
 
 def description_classifier(len):
-    if(len == 0 or len == 1):
+    if(len < 4):
         return False
     else:
         return True
