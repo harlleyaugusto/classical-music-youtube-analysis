@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="- user_network added">
+      <change afterPath="$PROJECT_DIR$/drawing_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -289,7 +289,9 @@
       <workItem from="1571235808930" duration="8600000" />
       <workItem from="1571307445320" duration="26508000" />
       <workItem from="1571643251034" duration="18133000" />
-      <workItem from="1571664494956" duration="4189000" />
+      <workItem from="1571664494956" duration="4346000" />
+      <workItem from="1571734092164" duration="12957000" />
+      <workItem from="1571753405471" duration="12030000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -431,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571477819919</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- user_network added">
+      <created>1571676137236</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571676137236</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
