@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="" />
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spam_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/spam_detection.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +296,8 @@
       <workItem from="1571753405471" duration="12069000" />
       <workItem from="1571909089302" duration="4911000" />
       <workItem from="1571915113261" duration="2916000" />
-      <workItem from="1571918849209" duration="4089000" />
+      <workItem from="1571918849209" duration="4105000" />
+      <workItem from="1571928116057" duration="2128000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -456,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571922568042</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="- Reviewing code">
+      <created>1571925841300</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571925841300</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

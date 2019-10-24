@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix,classification_report,accuracy_score
 from sklearn.ensemble import RandomForestClassifier
+import math
 
 def load_data():
     train_data = []
@@ -25,7 +26,7 @@ def drop_fectures(features,data):
     data.drop(features,axis=1,inplace=True)
 
 def process_content(content):
-    if content is not None and isinstance(content, str):
+    if (content is not None and isinstance(content, str)) and (content is not None):
         return " ".join(re.findall("[A-Za-z]+",content.lower()))
     else:
         None
@@ -48,7 +49,8 @@ def classifier(data):
     model = RandomForestClassifier()
     model.fit(x_train_tfidf, y_train)
 
-    comment_counts = count_vect.transform(data)
+    #to-do verify it!!!
+    comment_counts = count_vect.transform(data.apply(process_content))
     comment_tfidf = tranformer.transform(comment_counts)
 
     predictions = model.predict(comment_tfidf)
@@ -89,7 +91,8 @@ if __name__ == '__main__':
 
     data = pd.read_csv("data/comments_processed.csv", engine = 'python')
 
-    #comment_counts = data['text'].apply(process_content).apply(lambda t: count_vect.transform(t) if (t is not None) else None)
+    #comment_counts = data['text'].apply(process_content).apply(lambda t: count_vect.transform(t) if pd.notnull(t) else None)
+    #comment_counts = count_vect.transform(data['text'].apply(process_content))
     #comment_tfidf = tranformer.transform(comment_counts)
 
     #predictions = model.predict(comment_tfidf)
