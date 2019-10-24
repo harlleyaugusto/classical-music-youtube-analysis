@@ -48,9 +48,11 @@ if __name__ == '__main__':
 
     logging.info('Calculating similarity between...')
 
-    sim = []
-    for index, row in data.iterrows():
-        sim.append(glove_similarity.cosine_distance_wordembedding_method(model, glove_similarity.replace(row.video_tags), row.video_description))
+    #sim = []
+    #for index, row in data.iterrows():
+    #    sim.append(glove_similarity.cosine_distance_wordembedding_method(model, glove_similarity.replace(row.video_tags), row.video_description))
+    sim = list(map(glove_similarity.cosine_distance_wordembedding_method, repeat(model), data.video_tags.apply(glove_similarity.replace), data.video_description))
+
     logging.info('Done!')
 
     data['sim_tag_description'] = [0 if math.isnan(x) or x < 0 else x for x in sim]
@@ -94,3 +96,4 @@ if __name__ == '__main__':
 
 
 
+#list(map(textdistance.cosine, data.video_tags.apply(eval), r))

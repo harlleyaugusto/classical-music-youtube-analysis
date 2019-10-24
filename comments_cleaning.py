@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     # Selecting only comments with more than 2 words
     data = data[data.text_level]
-    logging.info('Text with more tha 2 words selected!')
+    logging.info('Text with more than 3 words selected!')
 
     # Select only description in English
 

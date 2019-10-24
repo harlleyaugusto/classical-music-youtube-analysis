@@ -15,7 +15,7 @@ def load_data():
         data = pd.read_csv(file)
         train_data.append(data)
 
-    #train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv'))
+    train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv'))
     train_data = pd.concat(train_data)
 
     return train_data
@@ -25,7 +25,10 @@ def drop_fectures(features,data):
     data.drop(features,axis=1,inplace=True)
 
 def process_content(content):
-    return " ".join(re.findall("[A-Za-z]+",content.lower()))
+    if content is not None and isinstance(content, str):
+        return " ".join(re.findall("[A-Za-z]+",content.lower()))
+    else:
+        None
 
 def classifier(data):
     train_data = load_data()
@@ -84,12 +87,12 @@ if __name__ == '__main__':
 
     print(classification_report(y_test, predictions))
 
-    data = pd.read_csv("data/comments_processed.csv")
+    data = pd.read_csv("data/comments_processed.csv", engine = 'python')
 
-    comment_counts = count_vect.transform(data['text'])
-    comment_tfidf = tranformer.transform(comment_counts)
+    #comment_counts = data['text'].apply(process_content).apply(lambda t: count_vect.transform(t) if (t is not None) else None)
+    #comment_tfidf = tranformer.transform(comment_counts)
 
-    predictions = model.predict(comment_tfidf)
+    #predictions = model.predict(comment_tfidf)
 
     classifier(data['text'])
 
