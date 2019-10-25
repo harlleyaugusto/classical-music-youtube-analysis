@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/t-SNE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spam_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/spam_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.videos">
+  <component name="RunManager" selected="Python.t-SNE">
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,20 +148,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spam_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="t-SNE" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spam_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t-SNE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,11 +234,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.t-SNE" />
       <item itemvalue="Python.videos" />
       <item itemvalue="Python.comments" />
       <item itemvalue="Python.videos_cleaning" />
       <item itemvalue="Python.comments_cleaning" />
-      <item itemvalue="Python.spam_detection" />
       <item itemvalue="Python.user_network" />
       <item itemvalue="Python.glove_similarity" />
     </list>
@@ -251,7 +248,6 @@
         <item itemvalue="Python.user_network" />
         <item itemvalue="Python.comments_cleaning" />
         <item itemvalue="Python.glove_similarity" />
-        <item itemvalue="Python.spam_detection" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +293,8 @@
       <workItem from="1571909089302" duration="4911000" />
       <workItem from="1571915113261" duration="2916000" />
       <workItem from="1571918849209" duration="4105000" />
-      <workItem from="1571928116057" duration="2128000" />
+      <workItem from="1571928116057" duration="2222000" />
+      <workItem from="1571990118037" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -467,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571925841300</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- Updating...&#10;- glove_similarity added">
+      <created>1571930287129</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1571930287129</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,11 +509,13 @@
     <MESSAGE value="- SMS_spam_collection added" />
     <MESSAGE value="- user_network added" />
     <MESSAGE value="- Reviewing code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Reviewing code" />
+    <MESSAGE value="- Updating...&#10;- glove_similarity added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Updating...&#10;- glove_similarity added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1571064993839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$t_SNE.coverage" NAME="t-SNE Coverage Results" MODIFIED="1571990510242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$lsa_implementation.coverage" NAME="lsa_implementation Coverage Results" MODIFIED="1571145764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1571240016756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
