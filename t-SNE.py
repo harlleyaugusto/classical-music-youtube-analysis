@@ -16,12 +16,12 @@ if __name__ == '__main__':
     rndperm = np.random.permutation(data.shape[0])
 
     #set a random of users. If n == data.__len__(), then using all users.
-    N = 10000#data.__len__()
+    N = data.__len__()
     data_subset = data.loc[rndperm[:N], :].copy()
 
     data_values = data_subset.drop(['video_uploader_id','composer_name'], axis=1).values
 
-    tsne = TSNE(n_components=2, verbose=1, perplexity=40, n_iter=300)
+    tsne = TSNE(n_components=2, verbose=1, perplexity=40, n_iter=3000)
 
     tsne_results = tsne.fit_transform(data_values)
 

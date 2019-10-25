@@ -49,7 +49,7 @@ def classifier(data):
     model = RandomForestClassifier()
     model.fit(x_train_tfidf, y_train)
 
-    #to-do verify it!!!
+    #TODO: verify it!!!
     comment_counts = count_vect.transform(data.apply(process_content))
     comment_tfidf = tranformer.transform(comment_counts)
 
@@ -90,14 +90,12 @@ if __name__ == '__main__':
     print(classification_report(y_test, predictions))
 
     data = pd.read_csv("data/comments_processed.csv", engine = 'python')
+    comment_counts = count_vect.transform(data['text'].apply(process_content).dropna())
+    comment_tfidf = tranformer.transform(comment_counts)
+    predictions = model.predict(comment_tfidf)
 
-    #comment_counts = data['text'].apply(process_content).apply(lambda t: count_vect.transform(t) if pd.notnull(t) else None)
-    #comment_counts = count_vect.transform(data['text'].apply(process_content))
-    #comment_tfidf = tranformer.transform(comment_counts)
 
-    #predictions = model.predict(comment_tfidf)
-
-    classifier(data['text'])
+    classifier(data['text'].apply(process_content).dropna())
 
 
     #http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/

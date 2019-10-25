@@ -17,8 +17,6 @@ from itertools import repeat
 from statistics import mean
 import logging
 import math
-from nltk.tokenize import word_tokenize
-import glove_similarity
 
 def save_graph(graph,file_name):
     #initialze Figure
@@ -38,37 +36,25 @@ def save_graph(graph,file_name):
 
     plt.savefig(file_name,bbox_inches="tight")
     pylab.close()
-    del fig
 
 
+def network_composer(c_v):
+    video_group = c_v.groupby('video_id')
+    for name, grp in video_group:
+        author = grp['author'].apply(str).unique()
+        tuples = list(itertools.combinations(author, 2))
+        print('Name: ' + name + ' Count: ' + str(count) + ' tuples.len: ' + str(tuples.__len__()))
+        edges.append(tuples)
+        edges = list(itertools.chain.from_iterable(edges))
+        edges = list(set(edges))
+        total = total + tuples.__len__()
+        count = count +1
 
-def drawing_network(graph):
-    pos = nx.graphviz_layout(graph)
+    edges = list(filter(lambda x: isinstance(x, tuple), edges))
+    G = nx.Graph()
+    G.add_edges_from(edges)
+    return G
 
-    # find node near center (0.5,0.5)
-    dmin = 1
-    ncenter = 0
-    for n in pos:
-        x, y = pos[n]
-        d = (x - 0.5) ** 2 + (y - 0.5) ** 2
-        if d < dmin:
-            ncenter = n
-            dmin = d
-
-    # color by path length from node near center
-    p = dict(nx.single_source_shortest_path_length(G, ncenter))
-
-    plt.figure(figsize=(8, 8))
-    nx.draw_networkx_edges(G, pos, nodelist=[ncenter], alpha=0.4)
-    nx.draw_networkx_nodes(G, pos, nodelist=list(p.keys()),
-                           node_size=3,
-                           node_color=list(p.values()),
-                           cmap=plt.cm.Reds_r)
-
-    plt.xlim(-0.05, 1.05)
-    plt.ylim(-0.05, 1.05)
-    plt.axis('off')
-    plt.show()
 
 def network_composer(c_v):
     G = []
@@ -131,40 +117,17 @@ if __name__ == '__main__':
     c_v = c_v[['cid', 'text', 'votes', 'time', 'author',  'video_uploader_id', 'video_uploader_name', 'comment_timestamp',
        'video_id', 'search_query', 'date_mined', 'reply', 'text_level',
        'language_x', 'spam', 'video_url', 'video_title', 'video_views', 'video_description', 'composer_name']]
+
+    #Timestamp into datetime
     c_v['date'] = c_v.comment_timestamp.apply(to_float).apply(to_int).apply(to_date)
     c_v['date_index'] = pd.to_datetime(c_v['date'])
+    c_v = c_v.set_index('date')
 
-    video_group = c_v.groupby('video_id')
-    c_v = c_v.set_index('date_index')
-
-    count = 1
-    total = 0
-    edges = []
 
     a = c_v.groupby(['composer_name', 'video_id', pd.Grouper(freq='M')])
 
     for name, group in a:
         print(str(name[0]) + " " + str(name[1]) + " " + (str(name[2])))
-
-    '''
-    for name, grp in video_group:
-        author = grp['author'].apply(str).unique()
-        tuples = list(itertools.combinations(author, 2))
-        print('Name: ' + name + ' Count: ' + str(count) + ' tuples.len: ' + str(tuples.__len__()))
-        edges.append(tuples)
-        edges = list(itertools.chain.from_iterable(edges))
-        edges = list(set(edges))
-        total = total + tuples.__len__()
-        #G.add_edges_from(tuples)
-
-        count = count +1
-
-    edges = list(filter(lambda x: isinstance(x, tuple), edges))
-    G = nx.Graph()
-    G.add_edges_from(edges)
-    drawing_network(G)
-
-    '''
 
     Gs = network_composer(c_v)
 
