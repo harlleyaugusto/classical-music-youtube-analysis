@@ -1,22 +1,16 @@
 import pandas as pd
 import itertools
 import networkx as nx
-import numpy as np
-from scipy import spatial
-from networkx import Graph
-from copy import deepcopy
 
 import matplotlib.pyplot as plt
 from matplotlib import pylab
 from datetime import datetime
-
-import re
-import textstat
-import textdistance
-from itertools import repeat
-from statistics import mean
 import logging
+
 import math
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def save_graph(graph,file_name):
     #initialze Figure
@@ -38,23 +32,26 @@ def save_graph(graph,file_name):
     pylab.close()
 
 
-def network_composer(c_v):
+def network_videos(c_v):
+    edges = []
     video_group = c_v.groupby('video_id')
     for name, grp in video_group:
-        author = grp['author'].apply(str).unique()
+        author = grp['author'].unique()
         tuples = list(itertools.combinations(author, 2))
-        print('Name: ' + name + ' Count: ' + str(count) + ' tuples.len: ' + str(tuples.__len__()))
-        edges.append(tuples)
-        edges = list(itertools.chain.from_iterable(edges))
+        tuples = list(filter(lambda x: isinstance(x, tuple), tuples))
+        #edges.append(tuples)
+        edges = edges + tuples
+        size_edges = edges.__len__()
+        #edges = list(itertools.chain.from_iterable(edges))
         edges = list(set(edges))
-        total = total + tuples.__len__()
-        count = count +1
+        size_edges = edges.__len__()
+        logger.info('video_id: ' + name + ' edges: ' + str(edges.__len__()))
 
-    edges = list(filter(lambda x: isinstance(x, tuple), edges))
+    #edges = list(filter(lambda x: isinstance(x, tuple), edges))
+    logger.info(' edges: ' + str(edges.__len__()))
     G = nx.Graph()
     G.add_edges_from(edges)
     return G
-
 
 def network_composer(c_v):
     G = []
@@ -62,7 +59,7 @@ def network_composer(c_v):
     past_composer = ""
     composer_group = c_v.groupby(['composer_name','video_id'])
     for name, grp in composer_group:
-        print("Composer: " + str(name[0]) + " Video: " + name[1])
+        logger.info("Composer: " + str(name[0]) + " Video: " + name[1])
         author = grp['author'].apply(str).unique()
         tuples = list(itertools.combinations(author, 2))
         edges.append(tuples)
@@ -105,7 +102,22 @@ def to_date(d):
     else:
         return None
 
+
+def network_time_serie(c_v):
+    # Timestamp into datetime
+    c_v['date'] = c_v.comment_timestamp.apply(to_float).apply(to_int).apply(to_date)
+    c_v['date_index'] = pd.to_datetime(c_v['date'])
+    c_v = c_v.set_index('date_index')
+
+    a = c_v.groupby(['composer_name', 'video_id', pd.Grouper(freq='M')])
+
+    for name, group in a:
+        print(str(name[0]) + " " + str(name[1]) + " " + (str(name[2])))
+
+
 if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
+
     comments = pd.read_csv("data/comments_processed.csv", engine = 'python', encoding = "utf-8")
     comments = comments[comments['author'].notna() & comments['author'].notnull()]
 
@@ -118,19 +130,30 @@ if __name__ == '__main__':
        'video_id', 'search_query', 'date_mined', 'reply', 'text_level',
        'language_x', 'spam', 'video_url', 'video_title', 'video_views', 'video_description', 'composer_name']]
 
-    #Timestamp into datetime
-    c_v['date'] = c_v.comment_timestamp.apply(to_float).apply(to_int).apply(to_date)
-    c_v['date_index'] = pd.to_datetime(c_v['date'])
-    c_v = c_v.set_index('date')
+
+    #gv = network_videos(c_v)
 
 
-    a = c_v.groupby(['composer_name', 'video_id', pd.Grouper(freq='M')])
+    #gc = network_composer(c_v)
 
-    for name, group in a:
-        print(str(name[0]) + " " + str(name[1]) + " " + (str(name[2])))
+    #gts = network_time_serie(c_v)
 
-    Gs = network_composer(c_v)
 
-    #fOk8Tm815lE
+    video_group = c_v.groupby('video_id')
+    t_agg = video_group.aggregate(
+        {
+            'author': lambda authors: list(itertools.combinations(authors.unique(), 2))
+        }
+    )[['author']][0:17]
 
-    #timeserie = c_v.groupby(['composer', 'id_video', ''])
+    t_agg = t_agg.author.apply(lambda l: list(set(l)))
+    lst_a = list(itertools.chain.from_iterable(t_agg))
+    lst_a = list(set(lst_a))
+
+    lst_a = list(filter(lambda x: isinstance(x, tuple), lst_a))
+
+    print(lst_a.__len__())
+
+    G = nx.Graph()
+    G.add_edges_from(lst_a)
+    
