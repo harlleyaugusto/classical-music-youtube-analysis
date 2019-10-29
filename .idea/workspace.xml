@@ -204,7 +204,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user_network.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -319,7 +319,8 @@
       <workItem from="1571990118037" duration="14309000" />
       <workItem from="1572250263032" duration="12149000" />
       <workItem from="1572265761543" duration="13199000" />
-      <workItem from="1572280912913" duration="541000" />
+      <workItem from="1572280912913" duration="9971000" />
+      <workItem from="1572344828928" duration="6942000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -510,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572046547903</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="- updating...">
+      <created>1572281655310</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1572281655310</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +558,8 @@
     <MESSAGE value="- Reviewing code" />
     <MESSAGE value="- Updating...&#10;- glove_similarity added" />
     <MESSAGE value="- t-SNE added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- t-SNE added" />
+    <MESSAGE value="- updating..." />
+    <option name="LAST_COMMIT_MESSAGE" value="- updating..." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
@@ -565,7 +574,7 @@
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$spam_detection.coverage" NAME="spam_detection Coverage Results" MODIFIED="1572006563315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$user_network.coverage" NAME="user_network Coverage Results" MODIFIED="1572281239639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$user_network.coverage" NAME="user_network Coverage Results" MODIFIED="1572354446646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571912029648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$glove_similarity.coverage" NAME="glove_similarity Coverage Results" MODIFIED="1571649091826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
