@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +25,13 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="deliverableD4.2-2" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Setup Script" />
         <option value="Python Script" />
       </list>
     </option>
@@ -50,12 +54,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="pyconsole" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gensim_similarity.py" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings module-name="deliverableD4.2-2" sdk-home="/usr/bin/python3.6">
-        <option name="mySdkHome" value="/usr/bin/python3.6" />
+      <console-settings module-name="deliverableD4.2-2" sdk-home="$PROJECT_DIR$/venv/bin/python">
+        <option name="useSoftWraps" value="true" />
+        <option name="mySdkHome" value="$PROJECT_DIR$/venv/bin/python" />
         <option name="myModuleName" value="deliverableD4.2-2" />
       </console-settings>
     </option>
@@ -74,11 +81,143 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="videos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.user_network">
+    <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="comments_cleaning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments_cleaning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="glove_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/glove_similarity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spam_detection" type="PythonConfigurationType" factoryName="Python">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spam_detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="t-SNE" type="PythonConfigurationType" factoryName="Python">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t-SNE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user_network" type="PythonConfigurationType" factoryName="Python">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="videos" type="PythonConfigurationType" factoryName="Python">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -94,11 +233,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="videos_cleaning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deliverableD4.2-2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/videos_cleaning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.spam_detection" />
+      <item itemvalue="Python.t-SNE" />
+      <item itemvalue="Python.videos" />
+      <item itemvalue="Python.comments" />
+      <item itemvalue="Python.user_network" />
+      <item itemvalue="Python.videos_cleaning" />
+      <item itemvalue="Python.comments_cleaning" />
+      <item itemvalue="Python.glove_similarity" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.videos" />
-        <item itemvalue="Python.comments" />
-        <item itemvalue="Python.comments" />
+        <item itemvalue="Python.comments_cleaning" />
+        <item itemvalue="Python.videos_cleaning" />
+        <item itemvalue="Python.glove_similarity" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +293,34 @@
       <workItem from="1570101473232" duration="14411000" />
       <workItem from="1570178607763" duration="35894000" />
       <workItem from="1570558246322" duration="559000" />
-      <workItem from="1570558813017" duration="7874000" />
+      <workItem from="1570558813017" duration="2264000" />
+      <workItem from="1570561886235" duration="2179000" />
+      <workItem from="1570568190531" duration="4577000" />
+      <workItem from="1570606250113" duration="24718000" />
+      <workItem from="1570697714456" duration="10084000" />
+      <workItem from="1570708502483" duration="24854000" />
+      <workItem from="1570782745511" duration="15511000" />
+      <workItem from="1570960585837" duration="60000" />
+      <workItem from="1570976439109" duration="7528000" />
+      <workItem from="1571006777194" duration="2940000" />
+      <workItem from="1571046126135" duration="25159000" />
+      <workItem from="1571133022282" duration="509000" />
+      <workItem from="1571133546268" duration="23160000" />
+      <workItem from="1571235808930" duration="8600000" />
+      <workItem from="1571307445320" duration="26508000" />
+      <workItem from="1571643251034" duration="18133000" />
+      <workItem from="1571664494956" duration="4346000" />
+      <workItem from="1571734092164" duration="12957000" />
+      <workItem from="1571753405471" duration="12069000" />
+      <workItem from="1571909089302" duration="4911000" />
+      <workItem from="1571915113261" duration="2916000" />
+      <workItem from="1571918849209" duration="4105000" />
+      <workItem from="1571928116057" duration="2222000" />
+      <workItem from="1571990118037" duration="14309000" />
+      <workItem from="1572250263032" duration="12149000" />
+      <workItem from="1572265761543" duration="13199000" />
+      <workItem from="1572280912913" duration="9971000" />
+      <workItem from="1572344828928" duration="6942000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -138,20 +336,196 @@
       <option name="project" value="LOCAL" />
       <updated>1570560752840</updated>
     </task>
-    <task id="LOCAL-00003" summary="comments.py added">
-      <created>1570561093057</created>
+    <task id="LOCAL-00003" summary="Updating...">
+      <created>1570572336158</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1570561093057</updated>
+      <updated>1570572336158</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Completeness and start creating user profile">
+      <created>1570623277303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570623277303</updated>
+    </task>
+    <task id="LOCAL-00005" summary="User profile v1">
+      <created>1570637309882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570637309882</updated>
+    </task>
+    <task id="LOCAL-00006" summary="User profile v1">
+      <created>1570783539620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570783539620</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Off to Portugal">
+      <created>1570960147716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570960147716</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Off to Portugal">
+      <created>1570960613632</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570960613632</updated>
+    </task>
+    <task id="LOCAL-00009" summary="At Portugal">
+      <created>1571009890508</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571009890508</updated>
+    </task>
+    <task id="LOCAL-00010" summary="videos_cleaning.py added">
+      <created>1571060675308</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571060675308</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updating...">
+      <created>1571072293158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571072293158</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updating...">
+      <created>1571075260588</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571075260588</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updating...">
+      <created>1571134905530</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571134905530</updated>
+    </task>
+    <task id="LOCAL-00014" summary="comments_cleaning.py added">
+      <created>1571139877617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1571139877617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="spam_detection added">
+      <created>1571224110396</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1571224110396</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- spam_detection with comments_cleaning&#10;- engine = python">
+      <created>1571238550274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1571238550274</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- SMS_spam_collection added">
+      <created>1571242744857</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1571242744857</updated>
+    </task>
+    <task id="LOCAL-00018" summary="- SMS_spam_collection added">
+      <created>1571244923694</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1571244923694</updated>
+    </task>
+    <task id="LOCAL-00019" summary="- user_network added">
+      <created>1571416587501</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1571416587502</updated>
+    </task>
+    <task id="LOCAL-00020" summary="- user_network added">
+      <created>1571477819919</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1571477819919</updated>
+    </task>
+    <task id="LOCAL-00021" summary="- user_network added">
+      <created>1571676137236</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571676137236</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- user_network added">
+      <created>1571778325291</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571778325291</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- Reviewing code">
+      <created>1571922568042</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1571922568042</updated>
+    </task>
+    <task id="LOCAL-00024" summary="- Reviewing code">
+      <created>1571925841300</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571925841300</updated>
+    </task>
+    <task id="LOCAL-00025" summary="- Updating...&#10;- glove_similarity added">
+      <created>1571930287129</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1571930287129</updated>
+    </task>
+    <task id="LOCAL-00026" summary="- t-SNE added">
+      <created>1572003543331</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1572003543331</updated>
+    </task>
+    <task id="LOCAL-00027" summary="- t-SNE added">
+      <created>1572046547903</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1572046547903</updated>
+    </task>
+    <task id="LOCAL-00028" summary="- updating...">
+      <created>1572281655310</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1572281655310</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,13 +544,38 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Videos.py added" />
     <MESSAGE value="requirements.txt added" />
-    <MESSAGE value="comments.py added" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments.py added" />
+    <MESSAGE value="Completeness and start creating user profile" />
+    <MESSAGE value="User profile v1" />
+    <MESSAGE value="Off to Portugal" />
+    <MESSAGE value="At Portugal" />
+    <MESSAGE value="videos_cleaning.py added" />
+    <MESSAGE value="Updating..." />
+    <MESSAGE value="comments_cleaning.py added" />
+    <MESSAGE value="spam_detection added" />
+    <MESSAGE value="- spam_detection with comments_cleaning&#10;- engine = python" />
+    <MESSAGE value="- SMS_spam_collection added" />
+    <MESSAGE value="- user_network added" />
+    <MESSAGE value="- Reviewing code" />
+    <MESSAGE value="- Updating...&#10;- glove_similarity added" />
+    <MESSAGE value="- t-SNE added" />
+    <MESSAGE value="- updating..." />
+    <option name="LAST_COMMIT_MESSAGE" value="- updating..." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570568048847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570028222659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1570570237408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1571064993839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$t_SNE.coverage" NAME="t-SNE Coverage Results" MODIFIED="1571990510242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$lsa_implementation.coverage" NAME="lsa_implementation Coverage Results" MODIFIED="1571145764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1571240016756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570561730696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments_cleaning.coverage" NAME="comments_cleaning Coverage Results" MODIFIED="1571135061636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$spam_detection.coverage" NAME="spam_detection Coverage Results" MODIFIED="1572006563315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$user_network.coverage" NAME="user_network Coverage Results" MODIFIED="1572354446646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571912029648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$glove_similarity.coverage" NAME="glove_similarity Coverage Results" MODIFIED="1571649091826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

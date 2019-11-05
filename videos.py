@@ -1,17 +1,99 @@
 import pandas as pd
+import textstat
+import textdistance
+from itertools import repeat
+from statistics import mean
+import logging
+import math
+from nltk.tokenize import word_tokenize
+import glove_similarity
+
+
+def completeness(video):
+    if video is not None:
+        total = video[video.notnull()].__len__()
+        if video['video_tags'] is not None or video['video_tags'].__len__() == 0:
+            total = total - 1
+        if video['video_categories'] is not None or video['video_categories'].__len__() == 0:
+            total = total - 1
+        return total / video.keys().__len__()
+    else:
+         return 0
+
+
+def length_description(text):
+    if text is not None and isinstance(text, str):
+        return word_tokenize(text).__len__()
+    else:
+        return 0
+
+def description_classifier(len):
+    if(len == 0 or len == 1):
+        return False
+    else:
+        return True
+
 
 if __name__ == '__main__':
-    data = pd.read_csv("data/videos.csv")
-    uploaders = data.groupby('video_uploader_id').count()
-    s_sum =  data.groupby('video_uploader_id').sum()
-    #
-    u = list(uploaders.index)
-    up = list(uploaders.iloc[:,0])
-    l = list(s_sum.iloc[:,1])
-    d = list(s_sum.iloc[:,2])
-    c = list(s_sum.iloc[:,6])
+    logging.getLogger().setLevel(logging.INFO)
 
-    df = {'user_id': u, 'user_count': up, 'user_likes': l, 'user_dislike': d, 'user_comments': c}
+    data = pd.read_csv("data/videos_processed.csv")
 
-    df = pd.DataFrame(df)
-    df.to_csv("data/s_videos.csv", index = False)
+    logging.info('Data loaded!')
+
+    gloveFile = "data/glove.6B.50d.txt"
+    model = glove_similarity.loadGloveModel(gloveFile)
+
+    logging.info('glove model built!')
+
+    logging.info('Calculating similarity between...')
+
+    #sim = []
+    #for index, row in data.iterrows():
+    #    sim.append(glove_similarity.cosine_distance_wordembedding_method(model, glove_similarity.replace(row.video_tags), row.video_description))
+    sim = list(map(glove_similarity.cosine_distance_wordembedding_method, repeat(model), data.video_tags.apply(glove_similarity.replace), data.video_description))
+
+    logging.info('Done!')
+
+    data['sim_tag_description'] = [0 if math.isnan(x) or x < 0 else x for x in sim]
+
+    #Completeness calculation
+    comp = [completeness(row) for index, row in data.iterrows()]
+
+    #Readability
+    readability_fre = data['video_description'].apply(lambda text: textstat.flesch_reading_ease(text) if (text is not None) else text)
+
+    #Description length
+    l_d = data['video_description'].apply(length_description)
+
+    data['completeness'] = list(comp)
+    data['flesch_reading_ease'] = list(readability_fre)
+    data['description_length'] = list(l_d)
+
+
+    #Consine beteween each video's tags and video's composer
+    consine_lst = []
+    for index, row in data.iterrows():
+        l = eval(row.video_tags)
+        consine_lst.append(list(map(textdistance.cosine, l, list(repeat(row.composer_name, l.__len__())))))
+
+    #Mean of the three greater similarities beteween composer and all tags
+    mean_cosine = [mean(sorted(i, reverse=True)[0:3]) if (i.__len__() > 0) else 0 for i in consine_lst]
+
+    data['sim_tag_composer'] = mean_cosine
+
+    uploaders_group = data[data.description_level].groupby(['video_uploader_id', 'composer_name'])
+
+    uploaders_count = uploaders_group[['video_url', 'video_likes', 'video_dislikes', 'video_comments', 'video_views']].count()
+
+    uploaders_count = uploaders_count.rename(columns={"video_url": "video_count"})
+
+    uploaders_avg = uploaders_group[['completeness','flesch_reading_ease', 'description_length', 'sim_tag_composer', 'sim_tag_description']].mean()
+
+    user_profile = pd.merge(uploaders_count, uploaders_avg, left_index=True, right_index=True)
+
+    user_profile.to_csv("data/user_profile.csv")
+
+
+
+#list(map(textdistance.cosine, data.video_tags.apply(eval), r))
