@@ -8,6 +8,7 @@ from nltk.tree import Tree
 import nltk
 import textstat
 
+import src.util.config as config
 
 def remove_ponctuation(text):
     if text is not None and isinstance(text, str):
@@ -105,7 +106,9 @@ def description_classifier(len):
         return True
 
 if __name__ == '__main__':
-    data = pd.read_csv("data/comments.csv")
+    c = config.Config()
+    data = pd.read_csv(c.data_dir + c.processed_data + "comments_processed.csv")
+
     authors = data.groupby('author').count()
 
     u = list(authors.index)

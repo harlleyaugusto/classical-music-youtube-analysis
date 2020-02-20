@@ -8,7 +8,7 @@ from langdetect import detect
 
 from src.models import spam_detection
 from src.features.comments import length_description, description_classifier
-
+import src.util.config as config
 
 def detect_lang(text):
     try:
@@ -24,7 +24,10 @@ def remove_ponctuation(text):
 
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
-    data = pd.read_csv("data/comments.csv", engine = 'python')
+
+    c = config.Config()
+
+    data = pd.read_csv(c.data_dir + c.raw_data + c.comments_file, engine = 'python')
 
     # Drop duplicates
     data.drop_duplicates(subset='cid', inplace=True, keep='last')
@@ -47,17 +50,16 @@ if __name__ == '__main__':
     data['language'] = data['text'].apply(detect_lang)
 
     data = data[data['language'] == 'en']
+    data.drop(columns = ['language'])
 
     logging.info('Only text in english selected!')
 
     logging.info('Spam filtering...')
     data['spam'] = spam_detection.classifier(data['text'])
-
     data = data[data['spam'] == 0]
 
     logging.info('Done!')
 
-    data.to_csv("data/comments_processed.csv", index=False)
-    data = pd.read_csv("data/comments_processed.csv", engine='python')
+    data.to_csv(c.data_dir + c.processed_data + "comments_processed.csv", index=False)
 
     logging.info('Comments preprocessed!')

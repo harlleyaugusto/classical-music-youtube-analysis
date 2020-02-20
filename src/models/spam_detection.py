@@ -6,24 +6,26 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix,classification_report,accuracy_score
 from sklearn.ensemble import RandomForestClassifier
+import src.util.config as config
 import math
 
 def load_data():
+    c = config.Config()
     train_data = []
-    diretory = 'data/spam-detection/'
+    diretory = c.data_dir + c.external_data + 'spam_detection/'
     data_files = [diretory + 'Youtube01-Psy.csv',diretory + 'Youtube02-KatyPerry.csv',diretory + 'Youtube03-LMFAO.csv',diretory + 'Youtube04-Eminem.csv',diretory + 'Youtube05-Shakira.csv']
     for file in data_files:
         data = pd.read_csv(file)
         train_data.append(data)
 
-    train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv'))
+    #train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv', engine = 'python'))
     train_data = pd.concat(train_data)
 
     return train_data
 
 ## Function which drops the given features from the given dataframe
-def drop_fectures(features,data):
-    data.drop(features,axis=1,inplace=True)
+def drop_fectures(features, data):
+    data.drop(features, axis=1,inplace=True)
 
 def process_content(content):
     if (content is not None and isinstance(content, str)) and (content is not None):
@@ -89,13 +91,13 @@ if __name__ == '__main__':
 
     print(classification_report(y_test, predictions))
 
-    data = pd.read_csv("data/comments_processed.csv", engine = 'python')
-    comment_counts = count_vect.transform(data['text'].apply(process_content).dropna())
-    comment_tfidf = tranformer.transform(comment_counts)
-    predictions = model.predict(comment_tfidf)
+    #data = pd.read_csv("data/comments_processed.csv", engine = 'python')
+    #comment_counts = count_vect.transform(data['text'].apply(process_content).dropna())
+    #comment_tfidf = tranformer.transform(comment_counts)
+    #predictions = model.predict(comment_tfidf)
 
 
-    classifier(data['text'].apply(process_content).dropna())
+    #classifier(data['text'].apply(process_content).dropna())
 
 
     #http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/
