@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="- updating...">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comments_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/videos_cleaning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +93,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/comments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +115,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comments_cleaning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/comments_cleaning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,7 +225,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/videos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/videos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,7 +247,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/videos_cleaning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/videos_cleaning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,7 +324,7 @@
       <workItem from="1572344828928" duration="6942000" />
       <workItem from="1572948843841" duration="653000" />
       <workItem from="1572950532150" duration="98000" />
-      <workItem from="1582203851914" duration="2735000" />
+      <workItem from="1582203851914" duration="2997000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -540,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582205329457</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="- config files added">
+      <created>1582207474381</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1582207474381</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,21 +584,22 @@
     <MESSAGE value="- Updating...&#10;- glove_similarity added" />
     <MESSAGE value="- t-SNE added" />
     <MESSAGE value="- updating..." />
-    <option name="LAST_COMMIT_MESSAGE" value="- updating..." />
+    <MESSAGE value="- config files added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- config files added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207235240">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207474104">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207235240" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207474104" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582204681828">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204681828" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582205330844">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582207475927">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582205330844" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207475927" />
     <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

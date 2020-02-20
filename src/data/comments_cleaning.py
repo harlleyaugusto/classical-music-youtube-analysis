@@ -7,7 +7,7 @@ import logging
 from langdetect import detect
 
 import spam_detection
-from comments import length_description, description_classifier
+from src.data.comments import length_description, description_classifier
 
 
 def detect_lang(text):
