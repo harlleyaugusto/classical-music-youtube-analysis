@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="- updating...">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +328,7 @@
       <workItem from="1572344828928" duration="6942000" />
       <workItem from="1572948843841" duration="653000" />
       <workItem from="1572950532150" duration="98000" />
-      <workItem from="1582203851914" duration="1389000" />
+      <workItem from="1582203851914" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -527,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582205209102</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="- updating...">
+      <created>1582205329457</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1582205329457</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,18 +584,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="- updating..." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582205208663">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207235240">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582205208663" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207235240" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582204681828">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204681828" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582205214809">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582205330844">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582205214809" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582205330844" />
     <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
