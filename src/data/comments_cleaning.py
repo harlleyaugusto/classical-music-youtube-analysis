@@ -6,7 +6,7 @@ import logging
 
 from langdetect import detect
 
-import spam_detection
+from src.models import spam_detection
 from src.features.comments import length_description, description_classifier
 
 

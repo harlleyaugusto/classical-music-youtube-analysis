@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comments_cleaning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/videos_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMS_spam_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SMS_spam_collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawing_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization/drawing_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fasttext_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/fasttext_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glove_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/glove_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsa_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/lsa_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spam_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/spam_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/comments_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comments_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t-SNE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization/t-SNE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization/user_network.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +87,14 @@
     <option name="myIpythonEnabled" value="false" />
     <option name="myUseExistingConsole" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/visualization" />
+      <recent name="$PROJECT_DIR$/src/features" />
+      <recent name="$PROJECT_DIR$/src/data" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.user_network">
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverableD4.2-2" />
@@ -137,7 +153,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/glove_similarity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/models/glove_similarity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +175,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spam_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/models/spam_detection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,7 +197,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t-SNE.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/visualization/t-SNE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,7 +219,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user_network.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/visualization/user_network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -324,7 +340,7 @@
       <workItem from="1572344828928" duration="6942000" />
       <workItem from="1572948843841" duration="653000" />
       <workItem from="1572950532150" duration="98000" />
-      <workItem from="1582203851914" duration="2997000" />
+      <workItem from="1582203851914" duration="3460000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -543,7 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582207474381</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="- data script added">
+      <created>1582207714432</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582207714432</updated>
+    </task>
+    <task id="LOCAL-00033" summary="- feature scripts added">
+      <created>1582207772856</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1582207772856</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,21 +615,23 @@
     <MESSAGE value="- t-SNE added" />
     <MESSAGE value="- updating..." />
     <MESSAGE value="- config files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- config files added" />
+    <MESSAGE value="- data script added" />
+    <MESSAGE value="- feature scripts added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- feature scripts added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207714217">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207772721">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207714217" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207772721" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582204681828">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204681828" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582207715819">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582207774357">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207715819" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207774357" />
     <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
