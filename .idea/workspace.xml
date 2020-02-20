@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_network.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,12 +47,17 @@
   </component>
   <component name="ProjectId" id="1Rb4X4dHot80h1UCQTFSGH93FOs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gensim_similarity.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adaptive-qa" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -68,18 +71,6 @@
     </option>
     <option name="myIpythonEnabled" value="false" />
     <option name="myUseExistingConsole" value="true" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.user_network">
     <configuration name="comments" type="PythonConfigurationType" factoryName="Python">
@@ -196,6 +187,9 @@
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -321,6 +315,9 @@
       <workItem from="1572265761543" duration="13199000" />
       <workItem from="1572280912913" duration="9971000" />
       <workItem from="1572344828928" duration="6942000" />
+      <workItem from="1572948843841" duration="653000" />
+      <workItem from="1572950532150" duration="98000" />
+      <workItem from="1582203851914" duration="1153000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -561,21 +558,35 @@
     <MESSAGE value="- updating..." />
     <option name="LAST_COMMIT_MESSAGE" value="- updating..." />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582205176047">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582205176047" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1582204681828">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204681828" />
+    <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204119296" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$gensim_similarity.coverage" NAME="gensim_similarity Coverage Results" MODIFIED="1571064993839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$t_SNE.coverage" NAME="t-SNE Coverage Results" MODIFIED="1571990510242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$lsa_implementation.coverage" NAME="lsa_implementation Coverage Results" MODIFIED="1571145764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1571240016756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571912029648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos__1_.coverage" NAME="videos (1) Coverage Results" MODIFIED="1570561730696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$user_network.coverage" NAME="user_network Coverage Results" MODIFIED="1572354446646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments__1_.coverage" NAME="comments (1) Coverage Results" MODIFIED="1570028788755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments_cleaning.coverage" NAME="comments_cleaning Coverage Results" MODIFIED="1571135061636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$spam_detection.coverage" NAME="spam_detection Coverage Results" MODIFIED="1572006563315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$user_network.coverage" NAME="user_network Coverage Results" MODIFIED="1572354446646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos.coverage" NAME="videos Coverage Results" MODIFIED="1571912029648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1571240016756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$glove_similarity.coverage" NAME="glove_similarity Coverage Results" MODIFIED="1571649091826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity__1_.coverage" NAME="text_similarity (1) Coverage Results" MODIFIED="1570717320983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$lsa_implementation.coverage" NAME="lsa_implementation Coverage Results" MODIFIED="1571145764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$videos_cleaning.coverage" NAME="videos_cleaning Coverage Results" MODIFIED="1571058775735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$t_SNE.coverage" NAME="t-SNE Coverage Results" MODIFIED="1571990510242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$spam_detection.coverage" NAME="spam_detection Coverage Results" MODIFIED="1572006563315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
