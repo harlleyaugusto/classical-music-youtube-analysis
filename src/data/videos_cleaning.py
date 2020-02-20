@@ -6,7 +6,7 @@ import logging
 
 from langdetect import detect
 
-from src.data.videos import length_description, description_classifier
+from src.features.videos import length_description, description_classifier
 
 
 def detect_lang(text):

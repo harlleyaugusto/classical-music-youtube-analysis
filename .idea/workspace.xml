@@ -93,7 +93,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/comments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/comments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,7 +225,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/videos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/videos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -588,18 +588,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="- config files added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207474104">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582207714217">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207474104" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207714217" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582204681828">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582204681828" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582207475927">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582207715819">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207475927" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582207715819" />
     <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
