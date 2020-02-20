@@ -12,6 +12,7 @@ class Config:
         self.external_data = self.config.get('FILES', 'external_files')
 
         self.comments_file = self.config.get('FILES', 'comments_file')
+        self.videos_file = self.config.get('FILES', 'videos_file')
 
         self.user = self.config.get('DATABASE', 'username')
         self.password = self.config.get('DATABASE', 'password')

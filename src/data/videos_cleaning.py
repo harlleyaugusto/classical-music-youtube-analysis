@@ -7,7 +7,7 @@ import logging
 from langdetect import detect
 
 from src.features.videos import length_description, description_classifier
-
+import src.util.config as config
 
 def detect_lang(text):
     try:
@@ -23,8 +23,10 @@ def remove_ponctuation(text):
 
 
 if __name__ == '__main__':
+    c = config.Config()
+
     logging.getLogger().setLevel(logging.INFO)
-    data = pd.read_csv("data/videos.csv")
+    data = pd.read_csv(c.data_dir + c.raw_data + c.videos_file)
 
     #Drop duplicates
     data.drop_duplicates(subset='video_id', inplace=True, keep = 'last')
@@ -54,6 +56,6 @@ if __name__ == '__main__':
 
     logging.info('Only description in english selected!')
 
-    data.to_csv("data/videos_processed.csv", index=False)
+    data.to_csv(c.data_dir + c.processed_data + "videos_processed.csv", index=False)
 
     logging.info('Videos preprocessed!')

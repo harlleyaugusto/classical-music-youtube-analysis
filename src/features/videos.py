@@ -7,7 +7,7 @@ import logging
 import math
 from nltk.tokenize import word_tokenize
 from src.models import glove_similarity
-
+import src.util.config as config
 
 def completeness(video):
     if video is not None:
@@ -37,7 +37,9 @@ def description_classifier(len):
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
 
-    data = pd.read_csv("data/videos_processed.csv")
+    c = config.Config()
+
+    data = pd.read_csv(c.data_dir + c.processed_data + "videos_processed.csv")
 
     logging.info('Data loaded!')
 
