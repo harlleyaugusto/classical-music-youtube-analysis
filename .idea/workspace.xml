@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reports/figures/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/figures/random_users_46272_t-sne.png" afterDir="false" />
-    </list>
+    <list default="true" id="085cefff-3c71-4a4f-af7a-9bc04b1d4e20" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,17 +76,18 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reports/figures" />
       <recent name="$PROJECT_DIR$/src/data" />
       <recent name="$PROJECT_DIR$/src/models" />
       <recent name="$PROJECT_DIR$/src/visualization" />
       <recent name="$PROJECT_DIR$/src/features" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.setup">
+  <component name="RunManager" selected="Python.config">
     <configuration name="SMS_spam_collection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,13 +154,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="deliverableD4.2-2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -171,7 +166,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/util/config.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -363,17 +358,16 @@
       <item itemvalue="Python.videos_cleaning" />
       <item itemvalue="Python.comments_cleaning" />
       <item itemvalue="Python.lsa_implementation" />
-      <item itemvalue="Python.glove_similarity" />
       <item itemvalue="Python.config" />
-      <item itemvalue="Python.SMS_spam_collection" />
       <item itemvalue="Python.setup" />
+      <item itemvalue="Python.glove_similarity" />
+      <item itemvalue="Python.SMS_spam_collection" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.setup" />
         <item itemvalue="Python.SMS_spam_collection" />
         <item itemvalue="Python.glove_similarity" />
-        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -430,7 +424,7 @@
       <workItem from="1582203851914" duration="4289000" />
       <workItem from="1582208948372" duration="7122000" />
       <workItem from="1582276475377" duration="6463000" />
-      <workItem from="1582283945821" duration="971000" />
+      <workItem from="1582283945821" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="Videos.py added">
       <created>1570559727688</created>
@@ -726,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582284619399</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="- reports/figure added">
+      <created>1582284937364</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1582284937364</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -750,7 +751,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User profile v1" />
     <MESSAGE value="Off to Portugal" />
     <MESSAGE value="At Portugal" />
     <MESSAGE value="videos_cleaning.py added" />
@@ -775,57 +775,58 @@
     <MESSAGE value="- scripts update regarding to new structure" />
     <MESSAGE value="- SMSSpanCollection added" />
     <MESSAGE value="- .idea added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- .idea added" />
+    <MESSAGE value="- reports/figure added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- reports/figure added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582281260163">
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582285018122">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582281260163" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285018122" />
     <state x="67" y="257" width="1843" height="590" key="#xdebugger.XInspectDialog" timestamp="1582209647375">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="67" y="257" width="1843" height="590" key="#xdebugger.XInspectDialog/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582209647375" />
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582284608777">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1582284937042">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582284608777" />
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582284937042" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582281258250">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582281258250" />
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1582283745395">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1582285021839">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582283745395" />
-    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1582283745395">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285021839" />
+    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1582285021839">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582283745395" />
-    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1582283745394">
+    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285021839" />
+    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1582285021839">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582283745394" />
-    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1582283745395">
+    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285021839" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1582285021839">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582283745395" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285021839" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582209534079">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582209534079" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582284086088">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582284960271">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582284086088" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582284960271" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582283985451">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582283985451" />
-    <state x="741" y="205" width="494" height="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582279303700">
+    <state x="741" y="205" width="494" height="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582285033686">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="741" y="205" width="494" height="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582279303700" />
+    <state x="741" y="205" width="494" height="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053/300.1080.1366.768@67.27.1853.1053" timestamp="1582285033686" />
     <state x="627" y="345" width="723" height="415" key="git4idea.merge.GitPullDialog" timestamp="1582204119296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -840,7 +841,7 @@
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$setup.coverage" NAME="setup Coverage Results" MODIFIED="1582284858069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments.coverage" NAME="comments Coverage Results" MODIFIED="1570571060344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$comments_cleaning.coverage" NAME="comments_cleaning Coverage Results" MODIFIED="1571135061636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deliverableD4_2_2$config.coverage" NAME="config Coverage Results" MODIFIED="1582208679662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deliverableD4_2_2$config.coverage" NAME="config Coverage Results" MODIFIED="1582285008670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$text_similarity.coverage" NAME="text_similarity Coverage Results" MODIFIED="1571068709294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$SMS_spam_collection.coverage" NAME="SMS_spam_collection Coverage Results" MODIFIED="1582281261780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deliverableD4_2_2$glove_similarity.coverage" NAME="glove_similarity Coverage Results" MODIFIED="1582279726731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
