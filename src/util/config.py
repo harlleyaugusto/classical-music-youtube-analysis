@@ -13,6 +13,7 @@ class Config:
 
         self.comments_file = self.config.get('FILES', 'comments_file')
         self.videos_file = self.config.get('FILES', 'videos_file')
+        self.glove = self.config.get('FILES', 'glove')
 
         self.user = self.config.get('DATABASE', 'username')
         self.password = self.config.get('DATABASE', 'password')

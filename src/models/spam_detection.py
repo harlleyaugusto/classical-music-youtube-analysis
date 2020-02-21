@@ -18,7 +18,7 @@ def load_data():
         data = pd.read_csv(file)
         train_data.append(data)
 
-    #train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv', engine = 'python'))
+    train_data.append(pd.read_csv(diretory + 'SMSSpamCollection.csv', engine = 'python'))
     train_data = pd.concat(train_data)
 
     return train_data

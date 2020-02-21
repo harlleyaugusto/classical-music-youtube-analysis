@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
     logging.info('Data loaded!')
 
-    gloveFile = "data/glove.6B.50d.txt"
+    gloveFile = c.data_dir + c.external_data + c.glove
     model = glove_similarity.loadGloveModel(gloveFile)
 
     logging.info('glove model built!')
@@ -95,8 +95,5 @@ if __name__ == '__main__':
 
     user_profile = pd.merge(uploaders_count, uploaders_avg, left_index=True, right_index=True)
 
-    user_profile.to_csv("data/user_profile.csv")
+    user_profile.to_csv(c.data_dir + c.processed_data + "user_profile.csv")
 
-
-
-#list(map(textdistance.cosine, data.video_tags.apply(eval), r))

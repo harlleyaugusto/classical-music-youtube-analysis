@@ -6,9 +6,13 @@ import logging
 
 from langdetect import detect
 
+from src.util import config
 
 if __name__ == '__main__':
-    data = pd.read_csv("data/spam-detection/SMSSpamCollection", engine='python', sep='\t', quoting=3)
+
+    c = config.Config()
+
+    data = pd.read_csv(c.data_dir + c.external_data + "spam_detection/SMSSpamCollection", engine='python', sep='\t', quoting=3)
     data.columns = ['CLASS', 'CONTENT']
     data['CLASS'] = data['CLASS'].apply(lambda c: 1 if (c == 'spam') else 0)
 
@@ -20,6 +24,6 @@ if __name__ == '__main__':
     a['CLASS'] = data['CLASS']
 
 
-    a.to_csv("data/spam-detection/SMSSpamCollection.csv", index=False)
+    a.to_csv(c.data_dir + c.external_data + "spam_detection/SMSSpamCollection.csv", index=False)
 
     #COMMENT_ID, AUTHOR, DATE, CONTENT, CLASS

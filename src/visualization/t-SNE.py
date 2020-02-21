@@ -5,10 +5,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+from src.util import config
+
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
 
-    data = pd.read_csv("data/user_profile.csv")
+    c = config.Config()
+
+    data = pd.read_csv(c.data_dir + c.processed_data + "user_profile.csv")
+
 
     logging.info('Data loaded!')
 

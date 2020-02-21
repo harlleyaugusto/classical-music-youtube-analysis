@@ -9,8 +9,7 @@ import matplotlib.pyplot as plt
 import logging
 
 import pandas as pd
-
-
+from src.util import config
 
 def load_data(data):
     document_list = []
@@ -33,6 +32,7 @@ def preprocess_data(doc_set):
     # loop through document list
     for i in doc_set:
         # clean and tokenize document string
+        print(i)
         raw = i.lower()
         tokens = tokenizer.tokenize(raw)
         # remove stop words from tokens
@@ -83,7 +83,10 @@ def plot_graph(doc_clean,start, stop, step):
     plt.show()
 
 if __name__ == '__main__':
-    data = pd.read_csv("data/comments_processed.csv")
+    c = config.Config()
+    data = pd.read_csv(c.data_dir + c.processed_data + "comments_processed.csv", engine = 'python')
+    data = data.dropna()
+
     document_list = load_data(data)
     clean_text = preprocess_data(document_list)
     model = create_gensim_lsa_model(clean_text, 7, 10)

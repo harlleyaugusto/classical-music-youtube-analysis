@@ -10,6 +10,8 @@ import logging
 import math
 import time
 
+from src.util import config
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -163,10 +165,12 @@ def network_time_serie(c_v):
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
 
-    comments = pd.read_csv("data/comments_processed.csv", engine = 'python', encoding = "utf-8")
+    c = config.Config()
+
+    comments = pd.read_csv(c.data_dir + c.processed_data + "comments_processed.csv", engine = 'python', encoding = "utf-8")
     comments = comments[comments['author'].notna() & comments['author'].notnull()]
 
-    videos = pd.read_csv("data/videos_processed.csv", engine = 'python')
+    videos = pd.read_csv(c.data_dir + c.processed_data + "videos_processed.csv", engine = 'python')
     videos = videos[videos['video_uploader_name'].notna() & videos['video_uploader_name'].notnull()]
 
     c_v = pd.merge(comments, videos, left_on = ['video_id'], right_on = ['video_id'], how='inner')
