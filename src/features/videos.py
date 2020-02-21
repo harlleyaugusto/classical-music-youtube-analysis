@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     #Readability
     readability_fre = data['video_description'].apply(lambda text: textstat.flesch_reading_ease(text) if (text is not None) else text)
-
+    #
     #Description length
     l_d = data['video_description'].apply(length_description)
 
